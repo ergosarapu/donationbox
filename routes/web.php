@@ -16,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Homepage
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
+
+// Redirect to index if configured
+Route::redirect('/', env('INDEX_REDIRECT_URL', '/welcome'));
 
 // Language switcher
 Route::get('lang/{locale}', [App\Http\Controllers\LocalizationController::class, 'index']);
