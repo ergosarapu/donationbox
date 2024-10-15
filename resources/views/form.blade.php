@@ -1,8 +1,5 @@
 
 <div>
-    <h2 class="mt-0 ml-3 mr-3 text-center text-2xl font-semibold text-gray-700">
-        {!! urldecode($campaign_title) !!}
-    </h2>
     <div class="mt-2 mb-4 ml-3 mr-3 text-center text-sm text-gray-500 align-middle">
         {!! urldecode($payee) !!}
         @if($iban)
@@ -25,16 +22,6 @@
             Copied!
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div><br>
-        <a href="{{ $bg_check }}" class="no-underline
-                 hover:underline text-xs text-blue-800" target="_blank">
-            <div class="inline-flex items-center mt-2">
-                @lang("Check payee's background")
-                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3
-                .org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0
-                 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </div>
-        </a><br>
     </div>
 
 </div>
@@ -49,7 +36,7 @@
         <!-- /Top Navigation -->
     </div>
 
-    <div class="bg-white rounded-lg p-3 pt-0 shadow justify-between mb-12">
+    <div class="bg-white rounded-lg p-3 pt-0 shadow justify-between">
         <div x-show.transition="step != 'complete'">
 
             <!-- Step Content -->

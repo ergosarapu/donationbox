@@ -24,11 +24,6 @@
 
     <div class="max-w-md w-full space-y-2">
         @include('form')
-        <div class="mt-8 w-1/4 mx-auto">
-            <a href="/" target="_blank">
-                <img class="mx-auto" src="/img/db-logo-fl-{{ env('COUNTRY') }}.png">
-            </a>
-        </div>
     </div>
 
 </div>
